@@ -16,10 +16,10 @@ import OrganeHRMBase.BaseClass;
  */
 public class LoginPage extends BaseClass {
    
-	@FindBy(name="username") WebElement username;
-	@FindBy(name="password") WebElement password;
-	@FindBy(xpath = "//button[@type=\"submit\"]") WebElement loginbtn;
-	@FindBy(xpath = "//img[@alt=\"company-branding\"]") WebElement logo;
+	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input") WebElement username;
+	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[1]") WebElement password;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button") WebElement loginbtn;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[1]/img") WebElement logo;
 	
 	public boolean validatelogo() {
 		

@@ -29,7 +29,7 @@ public class LoginPageTests extends BaseClass {
 	@Test(priority=2)
 	public void logintest() {
 		
-		DashBoard = loginpage.login("Admin","admin123");
+		DashBoard = loginpage.login(prop.getProperty("username"),prop.getProperty("passowrd"));
 		String expurl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 		String acturl = driver.getCurrentUrl();
 		
